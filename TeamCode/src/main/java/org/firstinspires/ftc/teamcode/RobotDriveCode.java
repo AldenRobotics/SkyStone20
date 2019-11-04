@@ -6,12 +6,12 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 
-/*Alden Robotics Code
+/**
+Alden Robotics Code
  *Made for X3 AWD and X4 AWD robot system and configuration
- *System not compatible with other robot systems
- */
+ *System not compatible with other robot systems    */
 
-@TeleOp(name = "EireCountyFairRobot", group = "Training")
+@TeleOp(name = "Silver Side Robot", group = "Just testing")
 public class RobotDriveCode extends OpMode {
     //declaration for two wheels
     DcMotor back_left;
@@ -19,10 +19,11 @@ public class RobotDriveCode extends OpMode {
     DcMotor front_left;
     DcMotor front_right;
 
-
+    /*
     //Servos
     Servo Plow1;
     Servo Plow2;
+     */
 
     //input from controller
     double leftWheelPower;
@@ -39,10 +40,17 @@ public class RobotDriveCode extends OpMode {
         back_left.setDirection(DcMotorSimple.Direction.REVERSE);
         front_left.setDirection(DcMotorSimple.Direction.REVERSE);
 
+        /*
         //---------------------------------------------------
         //Servos
         Plow1 = hardwareMap.servo.get("Plow1");
         Plow2 = hardwareMap.servo.get("Plow2");
+         */
+
+        //Telemetry Garbage
+        telemetry.addLine("Okay we are ready to go guys ");
+
+
     }
 
     @Override
@@ -71,6 +79,8 @@ public class RobotDriveCode extends OpMode {
             telemetry.clear();
         }
 
+        /*
+        //No Servos added yet
         //Servo Control
         if (gamepad1.x) {
             Plow1.setPosition(0);
@@ -79,7 +89,7 @@ public class RobotDriveCode extends OpMode {
             Plow1.setPosition(1);
             Plow2.setPosition(1);
         }
-
+        */
 
     }
 
