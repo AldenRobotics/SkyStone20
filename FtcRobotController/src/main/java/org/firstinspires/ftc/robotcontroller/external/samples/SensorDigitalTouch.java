@@ -61,6 +61,9 @@ public class SensorDigitalTouch extends LinearOpMode {
     @Override
     public void runOpMode() {
 
+
+
+
         // get a reference to our digitalTouch object.
         digitalTouch = hardwareMap.get(DigitalChannel.class, "sensor_digital");
 
