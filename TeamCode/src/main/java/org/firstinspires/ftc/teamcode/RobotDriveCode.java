@@ -12,7 +12,7 @@ Alden Robotics Code
  *Made for X3 AWD and X4 AWD robot system and configuration
  *System not compatible with other robot systems    */
 
-@TeleOp(name = "Silver Side Robot", group = "Just testing")
+@TeleOp(name = "Rochester Comp.", group = "just")
 public class RobotDriveCode extends OpMode {
     //declaration for 4 wheels
     DcMotor back_left;
@@ -125,19 +125,9 @@ public class RobotDriveCode extends OpMode {
             grabPower = 0.0;
         }
 
+
         telemetry.update();
 
-        /*
-        //No Servos added yet
-        //Servo Control
-        if (gamepad1.x) {
-            Plow1.setPosition(0);
-            Plow2.setPosition(0);
-        } else {
-            Plow1.setPosition(1);
-            Plow2.setPosition(1);
-        }
-        */
 
     }
 
