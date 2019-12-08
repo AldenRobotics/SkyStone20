@@ -41,12 +41,7 @@ public class Code_For_Front_Motors extends OpMode {
 
         left.setDirection(DcMotorSimple.Direction.REVERSE);
 
-        /*
-        //---------------------------------------------------
-        //Servos
-        Plow1 = hardwareMap.servo.get("Plow1");
-        Plow2 = hardwareMap.servo.get("Plow2");
-         */
+
 
         //Telemetry Garbage
         telemetry.addLine("Okay we are ready to go guys ");
